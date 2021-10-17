@@ -1,7 +1,7 @@
 let data;
 
 (async () => {
-	let response = await fetch("/a/data.json");
+	let response = await fetch("/Time-tracking-dashboard//data.json");
 	data = await response.json();
 		buttons[1].click();
 })();
