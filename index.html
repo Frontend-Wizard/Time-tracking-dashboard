@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="Images/favicon-32x32.png" type="image/x-icon">
+        <title>Time tracking dashboard</title>
+    </head>
+    <!--(.card>(.banner>img)+(.row>(h2+img))+h1+p)*6-->
+
+    <body>
+        <main>
+            <div class="mainCard">
+                <div class="mainCardBanner">
+                    <img src="Images/image-jeremy.png" alt="jeremy's profile pic">
+                    <div class="reportData">
+                        <h2>Report for</h2>
+                        <h1>Jeremy Robson</h1>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <button id="daily">Daily</button>
+                    </li>
+                    <li>
+                        <button id="weekly">Weekly</button>
+                    </li>
+                    <li>
+                        <button id="monthly">Monthly</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <div class="banner">
+                        <img src="Images/icon-work.svg" alt="Orange bag">
+                    </div>
+                    <div class="cardMainDiv">
+                        <div class="row">
+                            <h2>Work</h2>
+                            <img src="Images/icon-ellipsis.svg" alt="3 dots">
+                        </div>
+                        <div class="data">
+                            <h1><span id="WorkNow"></span>hrs</h1>
+                            <p>Last Week - <span id="WorkLastWeek"></span>hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="banner">
+                        <img src="Images/icon-play.svg" alt="Blue controller">
+                    </div>
+                    <div class="cardMainDiv">
+                        <div class="row">
+                            <h2>Play</h2>
+                            <img src="Images/icon-ellipsis.svg" alt="3 dots">
+                        </div>
+                        <div class="data">
+                            <h1><span id="PlayNow"></span>hrs</h1>
+                            <p>Last Week - <span id="PlayLastWeek"></span>hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="banner">
+                        <img src="Images/icon-study.svg" alt="Red book">
+                    </div>
+                    <div class="cardMainDiv">
+                        <div class="row">
+                            <h2>Study</h2>
+                            <img src="Images/icon-ellipsis.svg" alt="3 dots">
+                        </div>
+                        <div class="data">
+                            <h1><span id="StudyNow"></span>hrs</h1>
+                            <p>Last Week - <span id="StudyLastWeek"></span>hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="banner">
+                        <img src="Images/icon-exercise.svg" alt="Green stickman">
+                    </div>
+                    <div class="cardMainDiv">
+                        <div class="row">
+                            <h2>Exercise</h2>
+                            <img src="Images/icon-ellipsis.svg" alt="3 dots">
+                        </div>
+                        <div class="data">
+                            <h1><span id="ExerciseNow"></span>hrs</h1>
+                            <p>Last Week - <span id="ExerciseLastWeek"></span>hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="banner">
+                        <img src="Images/icon-social.svg" alt="Purple cloud">
+                    </div>
+                    <div class="cardMainDiv">
+                        <div class="row">
+                            <h2>Social</h2>
+                            <img src="Images/icon-ellipsis.svg" alt="3 dots">
+                        </div>
+                        <div class="data">
+                            <h1><span id="SocialNow"></span>hrs</h1>
+                            <p>Last Week - <span id="SocialLastWeek"></span>hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="banner">
+                        <img src="Images/icon-self-care.svg" alt="Yellow heart">
+                    </div>
+                    <div class="cardMainDiv">
+                        <div class="row">
+                            <h2>Self Care</h2>
+                            <img src="Images/icon-ellipsis.svg" alt="3 dots">
+                        </div>
+                        <div class="data">
+                            <h1><span id="SelfCareNow"></span>hrs</h1>
+                            <p>Last Week - <span id="SelfCareLastWeek"></span>hrs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+
+</html>
