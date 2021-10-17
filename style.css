@@ -305,11 +305,46 @@ main {
 	color: var(--inactiveTextColor);
 }
 
+footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.attribution {
+	display: flex;
+	position: absolute;
+	bottom: 4px;
+	font-size: 0.625rem;
+}
+
+.attribution p,
+.attribution a {
+	width: auto;
+	font-size: 15px;
+	color: var(--inactiveTextColor);
+}
+
+.attribution p:first-of-type {
+	margin-right: 0.3em;
+}
+
+.attribution a {
+	font-weight: bold;
+	color: var(--mainBannerColor);
+	text-decoration: underline;
+	text-decoration-style: wavy;
+}
+
 @media screen and (max-width: 1120px) {
 	body {
 		overflow-y: auto;
 		height: max-content;
 		padding: 50px 0;
+		flex-direction: column;
 	}
 
 	main {
@@ -342,6 +377,19 @@ main {
 
 	.card:nth-of-type(6) {
 		animation: slideInRight 0.5s 1 forwards 1s;
+	}
+
+	footer,
+	.attribution {
+		position: static;
+	}
+
+	footer {
+		margin-top: 20px;
+	}
+
+	.attribution {
+		margin-left: 159px;
 	}
 }
 
@@ -444,5 +492,11 @@ main {
 	.card p,
 	.card p span {
 		text-align: right;
+	}
+
+	.attribution {
+		margin-left: 0;
+		flex-direction: column;
+		text-align: center;
 	}
 }
