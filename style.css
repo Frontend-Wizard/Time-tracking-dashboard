@@ -24,46 +24,6 @@
 	transition: all 0.25s;
 }
 
-@keyframes slideInTop {
-	0% {
-		bottom: 120vw;
-	}
-	100% {
-		bottom: 0;
-		opacity: 1;
-	}
-}
-
-@keyframes slideInBottom {
-	0% {
-		top: 120vw;
-	}
-	100% {
-		top: 0;
-		opacity: 1;
-	}
-}
-
-@keyframes slideInLeft {
-	0% {
-		right: 120vw;
-	}
-	100% {
-		right: 0;
-		opacity: 1;
-	}
-}
-
-@keyframes slideInRight {
-	0% {
-		left: 120vw;
-	}
-	100% {
-		left: 0;
-		opacity: 1;
-	}
-}
-
 .active {
 	color: #fff !important;
 }
