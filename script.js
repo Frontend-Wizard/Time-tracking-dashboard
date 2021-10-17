@@ -1,9 +1,11 @@
 let data;
 
 (async () => {
-	let response = await fetch("/Time-tracking-dashboard//data.json");
+	let response = await fetch("/a/data.json");
 	data = await response.json();
+	setTimeout(() => {
 		buttons[1].click();
+	}, 900);
 })();
 
 let cards = {
@@ -58,7 +60,7 @@ for (let i = 0; i < buttons.length; i++) {
  */
 
 function counter(j, k, element, duration) {
-	const localDuration = duration ? duration : 0;
+	const localDuration = duration ? duration : 500;
 
 	if (j < k)
 		for (let i = j; i <= k; i++)
