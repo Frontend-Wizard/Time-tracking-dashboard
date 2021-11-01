@@ -95,8 +95,6 @@ main {
 	margin-right: 30px;
 	background: #1d204b;
 	border-radius: 15px;
-
-	opacity: 0;
 	position: relative;
 }
 
@@ -165,8 +163,6 @@ main {
 .card {
 	width: 255px;
 	height: 244px;
-
-	opacity: 0;
 	position: relative;
 }
 
